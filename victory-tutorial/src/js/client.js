@@ -4,6 +4,7 @@ import {
   VictoryAxis,
   VictoryBar,
   VictoryChart,
+  VictoryTheme,
 } from 'victory';
 
 class Main extends React.Component {
@@ -17,7 +18,10 @@ class Main extends React.Component {
     return (
       <div>
         <h1>Victory Tutorial</h1>
-        <VictoryChart domainPadding={20}>
+        <VictoryChart
+          domainPadding={20}
+          theme={VictoryTheme.material}
+        >
           <VictoryAxis
             tickValues={[1, 2, 3, 4]}
             tickFormat={["Q1", "Q2", "Q3", "Q4"]}
