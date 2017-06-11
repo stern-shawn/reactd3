@@ -54,7 +54,7 @@ class Main extends React.Component {
             tickFormat={(x) => (`$${x / 1000}k`)}
           />
           <VictoryStack
-            colorScale={"warm"}
+            colorScale={"qualitative"}
           >
             <VictoryBar
               data={data2012}
